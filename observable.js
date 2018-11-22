@@ -7,7 +7,8 @@ module.exports = Observable
 function Observable (value, opts) {
   var listeners = []
 
-  observable.set = function (value) {
+  observable.set = function (v) {
+    value = v
     var cachedListeners = listeners.slice(0)
     for (var i = 0, len = cachedListeners.length; i < len; i++) {
       cachedListeners[i](value)
