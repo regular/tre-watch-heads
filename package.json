@@ -1,0 +1,29 @@
+{
+  "name": "tre-watch-heads",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/regular/tre-watch-heads.git"
+  },
+  "keywords": [],
+  "author": "Jan Bölsche <jan@lagomorph.de> (https://regular.codes/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/regular/tre-watch-heads/issues"
+  },
+  "homepage": "https://github.com/regular/tre-watch-heads#readme",
+  "dependencies": {
+    "pull-stream": "^3.6.9"
+  },
+  "devDependencies": {
+    "flumedb": "^1.0.1",
+    "flumelog-offset": "^3.3.2",
+    "ssb-revisions": "^1.0.1",
+    "tape": "^4.9.1"
+  }
+}
