@@ -23,6 +23,9 @@ module.exports = function(ssb) {
       }
     })
     drain = pull.drain( ({heads, meta}) => {
+      if (!heads.length) {
+        return obs.set(null)
+      }
       const {key, value} = heads[0]
       obs.set({ key, value, meta })
     } )
