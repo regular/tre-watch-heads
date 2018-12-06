@@ -10,7 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/regular/tre-watch-heads.git"
   },
-  "keywords": [],
+  "keywords": [
+    "ssb",
+    "ssb-revisions",
+    "tre",
+    "mutant"
+  ],
   "author": "Jan Bölsche <jan@lagomorph.de> (https://regular.codes/)",
   "license": "ISC",
   "bugs": {

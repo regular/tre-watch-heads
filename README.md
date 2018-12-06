@@ -35,4 +35,10 @@ document.body.appendChild(
 
 ```
 
+See Also:
+
+- [ssb-revisions](https://www.npmjs.com/package/ssb-revisions)
+- [mutant](https://www.npmjs.com/package/mutant)
+- [collect-mutations](https://www.npmjs.com/package/collect-mutations)
+
 License: ISC
