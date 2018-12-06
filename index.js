@@ -18,7 +18,6 @@ module.exports = function(ssb) {
         )
       },
       onStopListening: () => {
-        console.log('drain abort')
         drain.abort()
       }
     })
