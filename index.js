@@ -2,7 +2,9 @@ const Value = require('./observable')
 const pull = require('pull-stream')
 
 module.exports = function(ssb) {
-  return function(revRoot) {
+  return function(revRoot, opts) {
+    opts = opts || {}
+    const {allowAllAuthors} = opts
     let drain
     const obs = Value(null, {
       onStartListening: () => {
@@ -12,7 +14,8 @@ module.exports = function(ssb) {
             sync: false,
             meta: true,
             values: true,
-            maxHeads: 1
+            maxHeads: 1,
+            allowAllAuthors
           }),
           drain
         )
