@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/regular/tre-watch-heads#readme",
   "dependencies": {
+    "debug": "^4.1.1",
     "pull-stream": "^3.6.9"
   },
   "devDependencies": {

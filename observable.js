@@ -1,6 +1,7 @@
 // copied from mutant/value.js and added
 // - onStartListening -- called after first listener was added
 // - onStopListening -- called after last listener was removed
+const debug = require('debug')('tre-watch-heads')
 
 module.exports = Observable
 
@@ -29,7 +30,7 @@ function Observable (value, opts) {
     const isFirst = listeners.length == 0
     listeners.push(listener)
     if (isFirst && opts.onStartListening) {
-      console.log('first listener')
+      debug('first listener')
       opts.onStartListening()
     }
 
@@ -42,7 +43,7 @@ function Observable (value, opts) {
         }
       }
       if (isLast && opts.onStopListening) {
-        console.log('lastlistener')
+        debug('last listener')
         opts.onStopListening()
       }
     }
