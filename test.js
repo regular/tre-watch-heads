@@ -17,7 +17,8 @@ test('observe a message', (t, db) => {
     const abort = obs(kvm => {
       t.deepEqual(kvm.meta, {
         incomplete: false,
-        forked: false
+        forked: false,
+        change_requests: 0
       })
       if (count == 0) {
         t.equal(kvm.key, keyA)

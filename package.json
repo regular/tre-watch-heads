@@ -23,13 +23,13 @@
   },
   "homepage": "https://github.com/regular/tre-watch-heads#readme",
   "dependencies": {
-    "debug": "^4.1.1",
-    "pull-stream": "^3.6.9"
+    "debug": "^4.2.0",
+    "pull-stream": "^3.6.14"
   },
   "devDependencies": {
-    "flumedb": "^1.0.1",
-    "flumelog-offset": "^3.3.2",
-    "ssb-revisions": "^1.0.1",
-    "tape": "^4.9.1"
+    "flumedb": "^2.1.8",
+    "flumelog-offset": "^3.4.4",
+    "ssb-revisions": "^1.5.0",
+    "tape": "^5.0.1"
   }
 }

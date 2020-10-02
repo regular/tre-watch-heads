@@ -30,6 +30,8 @@ module.exports = function(ssb) {
       }
       const {key, value} = heads[0]
       obs.set({ key, value, meta })
+    }, err => {
+      if (err) console.log(err.message)
     } )
     return obs
   }
